@@ -4,12 +4,12 @@ import asyncio
 NOT_STARTED = 'not-started'
 IN_PROGRESS = 'in-progress'
 PROCESSED = 'processed'
-RESOURCES = 48 # gb vram available for use across tasks.
+RESOURCES = 48 # mb vram available for use across tasks.
 
 # Cost of mapping states of our tasks, note - resource req to complete a task is dependent on resource req on instance.
 resource_mapping = {
-    NOT_STARTED: 1, # The cost of moving one task from NOT STARTED to in-progress is 1 gb of vram, unrealistic but who cares.
-    PROCESSED: 1 # Cost of moving a processed task from in-progress is 1 gb of vram
+    NOT_STARTED: 1, # The cost of moving one task from NOT STARTED to in-progress is 1 mb of vram, unrealistic but who cares.
+    PROCESSED: 1 # Cost of moving a processed task from in-progress is 1 mb of vram
 }
 
 
